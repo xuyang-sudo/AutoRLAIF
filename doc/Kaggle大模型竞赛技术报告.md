@@ -142,7 +142,7 @@ round_2:
 根据可视化分析，取`3072`为最大序列长度，取该数字是因为其为16的倍数，在GPU动态计算图中，所有的向量都要被padding为4、8、16的倍数才能被GPU批量计算，如果不提前设定为16的倍数，意味着GPU运行时需要动态处理每一个数据的padding，导致超时问题。
 
 另外，`response_a`和`response_b`的长度分布几乎一致
-![image-1](D:\xgswj\求职\简历-2024-10-24\image\image-3.png)
+![image](image/image-3.png)
 
 # 模型选择
 本场比赛可用的模型非常多，最终选择了`Gemma-2-9b-it`。主要原因是llama系列模型（包括llama3.1）未在部分数据上进行预训练并且参数调整较为复杂，而Gemma-2的后训练(`post-training`)阶段使用了主办方的ChatBot-1M数据集，这意味着Gemma-2在该领域任务已经具有有一定的适应能力，实验也表明Gemma-2的表现显著比其他模型更好。
@@ -187,7 +187,7 @@ QLoRA是一种高效的模型微调技术，它结合了量化（Quantization）
 
 - 使用4位量化来压缩主模型参数
 - 仅训练低秩适应矩阵 `adapter`
-![image-1](D:\xgswj\求职\简历-2024-10-24\image\image-4.png)
+![image](image/image-4.png)
 
 ## 数学原理
 
@@ -337,7 +337,7 @@ label_smoothing --> 针对 1B 以下的小模型有效，随着模型参数上�
 # 额外细节
 1. SFT 只需要 LoRA 微调 q, k, v三种模块
 2. 对于分类问题还需要增加微调 o 和 gate 两个模块
-![image-1](D:\xgswj\求职\简历-2024-10-24\image\image-5.png)
+![image](image/image-5.png)
 3. 不冻结参数会加剧模型的灾难性遗忘，但同时也能加强模型在下游任务的表现。为哪些层使用LoRA和不冻结哪些层参数是一样的
 4. LoRA能极大缓解模型的灾难性遗忘问题
 5. 数据格式不需要保持和预训练相同，调整q, k, v三个模型时模型几乎瞬间就可以适应新的格式
@@ -346,7 +346,7 @@ label_smoothing --> 针对 1B 以下的小模型有效，随着模型参数上�
 8. bfloat16, float16, float32
 bfloat是比较先进的，其表示范围与fp32相同但精度弱于fp16, 对神经网络来说，精度并不那么重要，更低的精度一定程度起到了正则化的效果，反而让模型泛化性更强了。
 9. 神经网络的 bias 参数一般设为 False 比较好，否则容易导致过拟合
-![image-1](D:\xgswj\求职\简历-2024-10-24\image\image-6.png)
+![image](image/image-6.png)
 10. 加速注意力计算可以使用两种方法：缩放点积注意力和flash attention，后者加速更明显，且没有效果损耗，其是完全基于优化IO和计算顺序来做到的。
 解说：https://zhuanlan.zhihu.com/p/639228219?s_r=0
 github: https://github.com/Dao-AILab/flash-attention
