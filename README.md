@@ -131,20 +131,10 @@ This project is licensed under the [Apache License 2.0](LICENSE).
 
 ## 🤝 **Contributing**
 
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to proceed.
+Contributions are welcome! Please read [Kaggle大模型竞赛技术报告.md](Kaggle大模型竞赛技术报告.md) for guidelines on how to proceed.
 
 ## 📧 **Contact**
 
-For any questions or suggestions, please contact your_email@example.com.
+For any questions or suggestions, please contact dkxuyangyang@163.com.
 
 ------
-
-**AutoRLAIF** empowers you to harness the full potential of reinforcement learning in fine-tuning large language models, delivering superior performance and adaptability for your AI-driven applications.
-=======
-# AutoRLAIF
-AutoRLAIF  is a cutting-edge framework designed to revolutionize the fine-tuning of large language models through Reinforcement Learning from AI Feedback (RLAIF).
->>>>>>> 2ebe35372b997102b7d33d50123e7f1a67ef8bf3
-=======
-# AutoRLAIF
-AutoRLAIF  is a cutting-edge framework designed to revolutionize the fine-tuning of large language models through Reinforcement Learning from AI Feedback (RLAIF).
->>>>>>> 2ebe35372b997102b7d33d50123e7f1a67ef8bf3
