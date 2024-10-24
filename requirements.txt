@@ -1,0 +1,13 @@
+transformers==4.42.3
+datasets
+scikit-learn
+sentencepiece
+matplotlib
+seaborn
+peft
+modelscope
+bitsandbytes
+accelerate
+torch
+numpy
+pandas
