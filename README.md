@@ -37,7 +37,8 @@ AutoRLAIF is ideal for developers, researchers, and organizations aiming to enha
 ## 📂 **Directory Structure**
 
 ```
-css复制代码AutoRLAIF/
+css
+AutoRLAIF/
 ├── README.md
 ├── LICENSE
 ├── data/
@@ -74,7 +75,8 @@ css复制代码AutoRLAIF/
 1. **Clone the Repository**
 
    ```
-   bash复制代码git clone https://github.com/your_username/AutoRLAIF.git
+   bash
+   git clone https://github.com/your_username/AutoRLAIF.git
    cd AutoRLAIF
    ```
 
@@ -82,9 +84,6 @@ css复制代码AutoRLAIF/
 
    ```
    bash
-   
-   
-   复制代码
    pip install -r requirements.txt
    ```
 
@@ -101,9 +100,6 @@ Navigate to the `src/model_training/` directory and execute the training script:
 
 ```
 bash
-
-
-复制代码
 python train.py
 ```
 
@@ -115,9 +111,6 @@ After training, navigate to the `src/inference/` directory and run the inference
 
 ```
 bash
-
-
-复制代码
 python inference.py
 ```
 
@@ -131,12 +124,9 @@ This project is licensed under the [Apache License 2.0](LICENSE).
 
 ## 🤝 **Contributing**
 
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to proceed.
+Contributions are welcome! Please read [Kaggle大模型竞赛技术报告.md](Kaggle大模型竞赛技术报告.md) for guidelines on how to proceed.
 
 ## 📧 **Contact**
 
-For any questions or suggestions, please contact your_email@example.com.
+For any questions or suggestions, please contact dkxuyangyang@163.com.
 
-------
-
->>>>>>> 
