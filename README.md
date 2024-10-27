@@ -37,7 +37,6 @@ AutoRLAIF is ideal for developers, researchers, and organizations aiming to enha
 ## 📂 **Directory Structure**
 
 ```
-css
 AutoRLAIF/
 ├── README.md
 ├── LICENSE
