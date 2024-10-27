@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # AutoRLAIF: Automated Reinforcement Learning from AI Feedback for Large Language Models
 
 **AutoRLAIF** is a cutting-edge framework designed to revolutionize the fine-tuning of large language models through **Reinforcement Learning from AI Feedback (RLAIF)**. By automating the supervised fine-tuning (SFT) process, AutoRLAIF eliminates the need for extensive manual intervention, enhancing both efficiency and performance in developing sophisticated AI-driven conversational systems.
@@ -141,12 +139,4 @@ For any questions or suggestions, please contact your_email@example.com.
 
 ------
 
-**AutoRLAIF** empowers you to harness the full potential of reinforcement learning in fine-tuning large language models, delivering superior performance and adaptability for your AI-driven applications.
-=======
-# AutoRLAIF
-AutoRLAIF  is a cutting-edge framework designed to revolutionize the fine-tuning of large language models through Reinforcement Learning from AI Feedback (RLAIF).
->>>>>>> 2ebe35372b997102b7d33d50123e7f1a67ef8bf3
-=======
-# AutoRLAIF
-AutoRLAIF  is a cutting-edge framework designed to revolutionize the fine-tuning of large language models through Reinforcement Learning from AI Feedback (RLAIF).
->>>>>>> 2ebe35372b997102b7d33d50123e7f1a67ef8bf3
+>>>>>>> 
